@@ -1,8 +1,8 @@
-package day_05.ogrenci;
+package day_05.ogrencitekrar;
 
 public class Ogrenci {
 
-    /*
+     /*
         -AD SOYAD
         -KİMLİK NO
         -YAŞ
@@ -11,23 +11,31 @@ public class Ogrenci {
 
      */
 
-    private String ad;
-    private String sAd;
+    private String ad ;
+
+    private String sad;
+
     private String tcNo;
+
     private int yas;
+
     private int numara;
+
     private String sinif;
 
-    public Ogrenci() {
+    public Ogrenci(){
+
     }
 
-    public Ogrenci(String ad, String sAd, String tcNo, int yas, int numara, String sinif) {
-        this.ad = ad;
-        this.sAd = sAd;
-        this.tcNo = tcNo;
-        this.yas = yas;
-        this.numara = numara;
-        this.sinif = sinif;
+    public Ogrenci(String ad, String sad, String tcNo, int yas, int numara, String sinif ){
+
+        this.ad=ad;
+        this.sad=sad;
+        this.tcNo=tcNo;
+        this.yas=yas;
+        this.numara=numara;
+        this.sinif=sinif;
+
     }
 
     public String getAd() {
@@ -38,12 +46,12 @@ public class Ogrenci {
         this.ad = ad;
     }
 
-    public String getsAd() {
-        return sAd;
+    public String getSad() {
+        return sad;
     }
 
-    public void setsAd(String sAd) {
-        this.sAd = sAd;
+    public void setSad(String sad) {
+        this.sad = sad;
     }
 
     public String getTcNo() {
@@ -66,7 +74,7 @@ public class Ogrenci {
         return numara;
     }
 
-    public void setNumara(int numara) {
+    public void setNumara(int no) {
         this.numara = numara;
     }
 
@@ -81,11 +89,11 @@ public class Ogrenci {
     @Override
     public String toString() {
         return
-                        "ÖĞRENCİNİN ADI= " + ad + "\n" +
-                        "ÖĞRENCİNİN SOYADI= " + sAd + "\n" +
-                        "ÖĞRENCİNİN TC NUMARASI= " + tcNo + "\n" +
-                        "ÖĞRENCİNİN YAŞI=" + yas +"\n"+
-                        "ÖĞRENCİNİN NUMARASI= " + numara +"\n"+
-                        "ÖĞRECİNİN SINIF=" + sinif;
+                "ÖĞRENCİNİN ADI= " + ad + "\n" +
+                "ÖĞRENCİNİN SOYADI= " + sad + "\n" +
+                "ÖĞRENCİNİN TC NUMARASI= " + tcNo + "\n" +
+                "ÖĞRENCİNİN YAŞI=" + yas +"\n"+
+                "ÖĞRENCİNİN NUMARASI= " + numara +"\n"+
+                "ÖĞRECİNİN SINIF=" + sinif;
     }
 }

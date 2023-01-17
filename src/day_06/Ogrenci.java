@@ -2,9 +2,19 @@ package day_06;
 
 public class Ogrenci extends Kisi {
 
-    //Ad-Soyad,  kimlik No, yaş, numara
+    //Ad-Soyad,  kimlik No, yaş, numara, sınıf
+
     private int numara;
     private String sinif;
+
+    public Ogrenci(String ad, String sad, String tcNo, int yas, int numara, String sinif) {
+        super(ad, sad, tcNo, yas);
+        this.numara = numara;
+        this.sinif = sinif;
+    }
+
+    public Ogrenci() {
+    }
 
     public int getNumara() {
         return numara;
@@ -22,11 +32,9 @@ public class Ogrenci extends Kisi {
         this.sinif = sinif;
     }
 
-
     @Override
     public String toString() {
-        return super.toString() +"numara=" + numara + '\'' +
-                ", sinif='" + sinif  +
-                '}';
+        return super.toString() + " " + "numara=" + numara +
+                ", sinif='" + sinif;
     }
 }
